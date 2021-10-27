@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         Elvinra/jx3-minikube: true
+        Elvinra/react-jx: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         Elvinra/jx3-minikube: merge
+        Elvinra/react-jx: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - Elvinra/jx3-minikube
+        - Elvinra/react-jx
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - Elvinra/jx3-minikube
+        - Elvinra/react-jx
       target_url: http://lighthouse-jx.192.168.99.103.nip.io/merge/status
 kind: ConfigMap
 metadata:
